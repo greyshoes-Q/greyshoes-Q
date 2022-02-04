@@ -47,7 +47,7 @@ btn.addEventListener("click", function() {
         <div class="ms" style="position: relative">
     
             <div>
-                <img src="blog/picture/myicon_light.png" width="50px"style="margin-right:10px;; float:left; border: 1px solid #fff; border-radius:8px; position:relative; bottom:8px"/>
+                <img src="blog/picture/myicon_light.png" alt="詼諧_GreyShoes-Q-商標" width="50px"style="margin-right:10px;; float:left; border: 1px solid #fff; border-radius:8px; position:relative; bottom:8px"/>
                 <h3>${nam.value}</h3>
             </div>
                                                 
@@ -75,7 +75,7 @@ btn.addEventListener("click", function() {
         <div class="ms" style="position: relative">
     
             <div>
-                <img src="blog/picture/myicon_zi.png" width="50px"style="margin-right:10px;; float:left; border: 1px solid #fff; border-radius:8px; position:relative; bottom:8px"/>
+                <img src="blog/picture/myicon_zi.png" alt="詼諧_GreyShoes-Q-字" width="50px"style="margin-right:10px;; float:left; border: 1px solid #fff; border-radius:8px; position:relative; bottom:8px"/>
                 <h3>${nam.value}</h3>
             </div>
                                                 
@@ -103,7 +103,7 @@ btn.addEventListener("click", function() {
         <div class="ms" style="position: relative">
     
             <div>
-                <img src="blog/picture/myicon_G.png" width="50px"style="margin-right:10px;; float:left; border: 1px solid #fff; border-radius:8px; position:relative; bottom:8px"/>
+                <img src="blog/picture/myicon_G.png" alt="詼諧_GreyShoes-Q-G" width="50px"style="margin-right:10px;; float:left; border: 1px solid #fff; border-radius:8px; position:relative; bottom:8px"/>
                 <h3>${nam.value}</h3>
             </div>
                                                 
@@ -131,7 +131,7 @@ btn.addEventListener("click", function() {
         <div class="ms" style="position: relative">
     
             <div>
-                <img src="blog/picture/myicon_29.png" width="50px"style="margin-right:10px;; float:left; border: 1px solid #fff; border-radius:8px; position:relative; bottom:8px"/>
+                <img src="blog/picture/myicon_29.png" alt="詼諧_GreyShoes-Q-29" width="50px"style="margin-right:10px;; float:left; border: 1px solid #fff; border-radius:8px; position:relative; bottom:8px"/>
                 <h3>${nam.value}</h3>
             </div>
                                                 
@@ -159,7 +159,7 @@ btn.addEventListener("click", function() {
         <div class="ms" style="position: relative">
     
             <div>
-                <img src="blog/picture/myicon_buluohe.png" width="50px"style="margin-right:10px;; float:left; border: 1px solid #fff; border-radius:8px; position:relative; bottom:8px"/>
+                <img src="blog/picture/myicon_buluohe.png" alt="詼諧_GreyShoes-Q-布洛赫球面" width="50px"style="margin-right:10px;; float:left; border: 1px solid #fff; border-radius:8px; position:relative; bottom:8px"/>
                 <h3>${nam.value}</h3>
             </div>
                                                 
