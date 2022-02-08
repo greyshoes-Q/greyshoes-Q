@@ -3831,7 +3831,7 @@ input, select, textarea {
 			transform: rotateX(20deg);
 			-webkit-overflow-scrolling: touch;
 			max-width: 100%;
-			max-height: 105vh;
+			max-height: 110vh;
 			opacity: 0;
 			overflow: auto;
 			text-align: center;
