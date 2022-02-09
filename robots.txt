@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /Quantum_essay/
+Disallow: /originally/
+
+User-agent: *
+Allow: /
+
+Sitemap: http://greyshoesq.com/others/sitemap.xml
