@@ -1,6 +1,6 @@
 User-agent: Googlebot
 Disallow: /greyshoesq.com/Quantum_essay/
-Disallow: /greyshoesq.comoriginally/
+Disallow: /greyshoesq.com/originally/
 
 User-agent: *
 Allow: /
