@@ -73,7 +73,7 @@
     background-color: rgba(var(--smart-secondary_800), 1);
   }
 
-  
+
     input[type="submit"].baoming,
 		input[type="reset"].baoming,
 		input[type="button"].baoming,
@@ -104,5 +104,3 @@
 			.button.baoming:active {
 				background-color: #53e3fb;
 			}
-
-
