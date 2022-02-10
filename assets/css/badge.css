@@ -72,3 +72,37 @@
     color: #E7DFDD;
     background-color: rgba(var(--smart-secondary_800), 1);
   }
+
+  
+    input[type="submit"].baoming,
+		input[type="reset"].baoming,
+		input[type="button"].baoming,
+		button.baoming,
+		.button.baoming {
+			background-color: #E7DFDD;
+			box-shadow: none;
+			color: #87c5a4;
+		}
+
+			input[type="submit"].baoming:hover, input[type="submit"].baoming:active,
+			input[type="reset"].baoming:hover,
+			input[type="reset"].baoming:active,
+			input[type="button"].baoming:hover,
+			input[type="button"].baoming:active,
+			button.baoming:hover,
+			button.baoming:active,
+			.button.baoming:hover,
+			.button.baoming:active {
+				background-color: #9bf1ff;
+				color: #0E0B16 !important;
+			}
+
+			input[type="submit"].baoming:active,
+			input[type="reset"].baoming:active,
+			input[type="button"].baoming:active,
+			button.baoming:active,
+			.button.baoming:active {
+				background-color: #53e3fb;
+			}
+
+
