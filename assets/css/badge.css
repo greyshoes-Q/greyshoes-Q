@@ -1,0 +1,123 @@
+/*Badge*/
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+  }
+
+  .badge:empty {
+    display: none;
+  }
+
+  .btn .badge {
+    position: relative;
+    top: -1px;
+  }
+
+  .badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+  }
+
+  .badge-primary {
+    color: #E7DFDD;
+    background-color: green;
+  }
+
+  .badge-primary[href]:hover, 
+  .badge-primary[href]:focus {
+    color: var(--smart-light);
+    text-decoration: none;
+    background-color: rgba(var(--smart-primary_600), 1);
+  }
+
+  .badge-secondary {
+    color: var(--smart-light);
+    background-color: rgba(var(--smart-secondary_500), 1);
+  }
+
+  .badge-secondary[href]:hover, 
+  .badge-secondary[href]:focus {
+    color: var(--smart-light);
+    text-decoration: none;
+    background-color: rgba(var(--smart-secondary_600), 1);
+  }
+
+  .badge-success {
+    color: var(--smart-light);
+    background-color: rgba(var(--smart-success_600), 1);
+  }
+
+  .badge-success[href]:hover, 
+  .badge-success[href]:focus {
+    color: var(--smart-light);
+    text-decoration: none;
+    background-color: rgba(var(--smart-success_700), 1);
+  }
+
+  .badge-info {
+    color: var(--smart-light);
+    background-color: rgba(var(--smart-cyan_600), 1);
+  }
+
+  .badge-info[href]:hover, 
+  .badge-info[href]:focus {
+    color: var(--smart-light);
+    text-decoration: none;
+    background-color: rgba(var(--smart-cyan_700), 1);
+  }
+
+  .badge-warning {
+    color: rgba(var(--smart-secondary_900), 1);
+    background-color: rgba(var(--smart-warning_500), 1);
+  }
+
+  .badge-warning[href]:hover, 
+  .badge-warning[href]:focus {
+    color: rgba(var(--smart-secondary_900), 1);
+    text-decoration: none;
+    background-color: rgba(var(--smart-warning_600), 1);
+  }
+
+  .badge-danger {
+    color: var(--smart-light);
+    background-color: rgba(var(--smart-danger_500), 1);
+  }
+
+  .badge-danger[href]:hover, 
+  .badge-danger[href]:focus {
+    color: var(--smart-light);
+    text-decoration: none;
+    background-color: rgba(var(--smart-danger_600), 1);
+  }
+
+  .badge-light {
+    color: rgba(var(--smart-secondary_900), 1);
+    background-color: var(--smart-light);
+  }
+
+  .badge-light[href]:hover, 
+  .badge-light[href]:focus {
+    color: rgba(var(--smart-secondary_900), 1);
+    text-decoration: none;
+    background-color: rgba(var(--smart-secondary_100), 1);
+  }
+
+  .badge-dark {
+    color: var(--smart-light);
+    background-color: rgba(var(--smart-secondary_800), 1);
+  }
+
+  .badge-dark[href]:hover, 
+  .badge-dark[href]:focus {
+    color: var(--smart-light);
+    text-decoration: none;
+    background-color: rgba(var(--smart-secondary_900), 1);
+  }
