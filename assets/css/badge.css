@@ -56,14 +56,16 @@
     background-color: rgb(230, 140, 5);
   }
 
-  .badge-danger {
+  /* 難度 */
+  .difficulty {
     color: #E7DFDD;
-    background-color: rgba(var(--smart-danger_500), 1);
+    background-color: black;
   }
 
-  .badge-light {
-    color: rgba(var(--smart-secondary_900), 1);
-    background-color: #E7DFDD;
+  /* 付費 */
+  .cost {
+    color: #E7DFDD;
+    background-color: purple;
   }
 
   .badge-dark {
