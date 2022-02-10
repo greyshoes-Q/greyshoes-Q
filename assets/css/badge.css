@@ -26,98 +26,47 @@
     border-radius: 10rem;
   }
 
-  .badge-primary {
+  /* 報名開放中 */
+  .open {
     color: #E7DFDD;
     background-color: green;
   }
 
-  .badge-primary[href]:hover, 
-  .badge-primary[href]:focus {
-    color: var(--smart-light);
-    text-decoration: none;
-    background-color: rgba(var(--smart-primary_600), 1);
+  /* 活動已結束 */
+  .close {
+    color: #E7DFDD;
+    background-color: grey;
   }
 
-  .badge-secondary {
-    color: var(--smart-light);
-    background-color: rgba(var(--smart-secondary_500), 1);
+  /* 活動地點 */
+  .place {
+    color: #E7DFDD;
+    background-color: rgb(14, 111, 202);
   }
 
-  .badge-secondary[href]:hover, 
-  .badge-secondary[href]:focus {
-    color: var(--smart-light);
-    text-decoration: none;
-    background-color: rgba(var(--smart-secondary_600), 1);
+  /* 活動進行中 */
+  .run {
+    color: #E7DFDD;
+    background-color: red;
   }
 
-  .badge-success {
-    color: var(--smart-light);
-    background-color: rgba(var(--smart-success_600), 1);
-  }
-
-  .badge-success[href]:hover, 
-  .badge-success[href]:focus {
-    color: var(--smart-light);
-    text-decoration: none;
-    background-color: rgba(var(--smart-success_700), 1);
-  }
-
-  .badge-info {
-    color: var(--smart-light);
-    background-color: rgba(var(--smart-cyan_600), 1);
-  }
-
-  .badge-info[href]:hover, 
-  .badge-info[href]:focus {
-    color: var(--smart-light);
-    text-decoration: none;
-    background-color: rgba(var(--smart-cyan_700), 1);
-  }
-
-  .badge-warning {
-    color: rgba(var(--smart-secondary_900), 1);
-    background-color: rgba(var(--smart-warning_500), 1);
-  }
-
-  .badge-warning[href]:hover, 
-  .badge-warning[href]:focus {
-    color: rgba(var(--smart-secondary_900), 1);
-    text-decoration: none;
-    background-color: rgba(var(--smart-warning_600), 1);
+  /* 年齡層 */
+  .age {
+    color: #E7DFDD;
+    background-color: rgb(230, 140, 5);
   }
 
   .badge-danger {
-    color: var(--smart-light);
+    color: #E7DFDD;
     background-color: rgba(var(--smart-danger_500), 1);
-  }
-
-  .badge-danger[href]:hover, 
-  .badge-danger[href]:focus {
-    color: var(--smart-light);
-    text-decoration: none;
-    background-color: rgba(var(--smart-danger_600), 1);
   }
 
   .badge-light {
     color: rgba(var(--smart-secondary_900), 1);
-    background-color: var(--smart-light);
-  }
-
-  .badge-light[href]:hover, 
-  .badge-light[href]:focus {
-    color: rgba(var(--smart-secondary_900), 1);
-    text-decoration: none;
-    background-color: rgba(var(--smart-secondary_100), 1);
+    background-color: #E7DFDD;
   }
 
   .badge-dark {
-    color: var(--smart-light);
+    color: #E7DFDD;
     background-color: rgba(var(--smart-secondary_800), 1);
-  }
-
-  .badge-dark[href]:hover, 
-  .badge-dark[href]:focus {
-    color: var(--smart-light);
-    text-decoration: none;
-    background-color: rgba(var(--smart-secondary_900), 1);
   }
