@@ -74,6 +74,7 @@
   }
 
 
+  /* 報名按鈕 */
     input[type="submit"].baoming,
 		input[type="reset"].baoming,
 		input[type="button"].baoming,
@@ -104,3 +105,35 @@
 			.button.baoming:active {
 				background-color: #53e3fb;
 			}
+
+/* 加入我們 */
+input[type="submit"].jiaru,
+input[type="reset"].jiaru,
+input[type="button"].jiaru,
+button.jiaru,
+.button.jiaru {
+  background-color: #E7DFDD;
+  box-shadow: none;
+  color: black;
+}
+
+  input[type="submit"].jiaru:hover, input[type="submit"].jiaru:active,
+  input[type="reset"].jiaru:hover,
+  input[type="reset"].jiaru:active,
+  input[type="button"].jiaru:hover,
+  input[type="button"].jiaru:active,
+  button.jiaru:hover,
+  button.jiaru:active,
+  .button.jiaru:hover,
+  .button.jiaru:active {
+    background-color: #9bf1ff;
+    color: #0E0B16 !important;
+  }
+
+  input[type="submit"].jiaru:active,
+  input[type="reset"].jiaru:active,
+  input[type="button"].jiaru:active,
+  button.jiaru:active,
+  .button.jiaru:active {
+    background-color: #53e3fb;
+  }
