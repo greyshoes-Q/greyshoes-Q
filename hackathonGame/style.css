@@ -1,0 +1,26 @@
+.container {
+    width: 530px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+}
+
+
+#Box2,#Box3,#Box4,#Box5,#Box6,#Box7,#Box8,#Box9,#Box0,#Box11,#Box12,#Box13,#Box14,#Box15,#Box16,#Box17{
+    width:120px;
+    height:120px;
+    padding:10px;
+    border:1px #ccc dashed;
+    float:left;
+    margin:5px;
+}
+
+#circle{
+    width: 80px;
+    height: 80px;
+    color: #0E0B16;
+    opacity: 1;
+    border: 1px #ccc dashed;
+}
+
+

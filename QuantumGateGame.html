@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Quantum gate game | QHACK Open Hackathon</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="hackathonGame/style.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>QHACK</strong> <span>Quantum gate game</span></a>
+						<nav>
+							<a href="#menu">HOW TO PLAY</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+
+					</nav>
+				
+
+
+				<div class="container" style="float: left;">
+					<div id="Box2" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box3" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box4" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box5" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box6" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box7" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box8" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box9" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box0" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box11" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box12" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box13" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box14" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box15" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box16" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box17" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+
+			<div style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 140px; left: 110px;"></div>
+			<div style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 140px; left: 370px;"></div>
+			<div style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 400px; left: 110px;"></div>
+			<div style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 400px; left: 370px;"></div>
+
+			<table style="width: 420px"> 
+				<tr>
+					<td style="background-color: #0E0B16;"><img id="Img1" src="hackathonGame/picture/control.png" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+					<td style="background-color: #0E0B16;"><img id="Img2" src="hackathonGame/picture/Hadamard.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+					<td style="background-color: #0E0B16;"><img id="Img3" src="hackathonGame/picture/Identity.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+				</tr>
+				
+				<tr>
+					<td style="background-color: #0E0B16;"><img id="Img4" src="hackathonGame/picture/PauliX.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+					<td style="background-color: #0E0B16;"><img id="Img5" src="hackathonGame/picture/PauliY.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+					<td style="background-color: #0E0B16;"><img id="Img6" src="hackathonGame/picture/PauliZ.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+				</tr>
+			</table>
+
+			<br/>
+			<br/>
+
+			<div>
+				<span><button id="btn"  class="primary large" style="margin: 15px;">Measure</button></span>
+				<span><input type="reset" value="Clear" class="large" style="margin-left: 5px;"/></span>
+	
+			</div>
+																
+			
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="hackathonGame/tuoyi.js"></script>
+
+
+	</body>
+</html>
+
+
