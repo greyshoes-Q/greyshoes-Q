@@ -1,12 +1,22 @@
-.container {
+.container44 {
     width: 530px;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 100px;
     margin-right: 150px;
 }
 
+.container33 {
+    width: 400px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-top: -15.5px;
+    border: 2px solid #ccc;
+    
+}
 
-#Box2,#Box3,#Box4,#Box5,#Box6,#Box7,#Box8,#Box9,#Box0,#Box11,#Box12,#Box13,#Box14,#Box15,#Box16,#Box17{
+
+#Box2,#Box3,#Box4,#Box5,#Box6,#Box7,#Box8,#Box9,#Box0,#Box11,#Box12,#Box13,#Box14,#Box15,#Box16,#Box17,#Box18,#Box19,#Box20,#Box21,#Box22,#Box23,#Box24,#Box25,#Box26{
     width:120px;
     height:120px;
     padding:10px;
@@ -15,12 +25,27 @@
     margin:5px;
 }
 
-#circle{
+/* #circle{
     width: 80px;
     height: 80px;
     color: #0E0B16;
     opacity: 1;
     border: 1px #ccc dashed;
+} */
+
+.fangge{
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    margin-top: 5px;
+    width: 200px;
+    height: 36px;
+    background-color: #0E0B16;
+    position: absolute; top: 50px; left: 720px;
+    text-align:center;
+    line-height: 12;
 }
+
+
 
 
