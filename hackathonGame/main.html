@@ -5,9 +5,11 @@
 		<title>Quantum gate game | QHACK Open Hackathon</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="hackathonGame/style.css" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="/eel.js"></script>
+		<script src="tuoyi.js"></script> 
 	</head>
 	<body class="is-preload">
 
@@ -31,7 +33,7 @@
 
 
 				<div class="container" style="float: left;">
-					<div id="Box2" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box2" ondrop="Drop(event)" ondragover="AllowDrop(event)" on></div>
 					<div id="Box3" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
 					<div id="Box4" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
 					<div id="Box5" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
@@ -58,41 +60,42 @@
 
 			<table style="width: 420px"> 
 				<tr>
-					<td style="background-color: #0E0B16;"><img id="Img1" src="hackathonGame/picture/control.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
-					<td style="background-color: #0E0B16;"><img id="Img2" src="hackathonGame/picture/Hadamard0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
-					<td style="background-color: #0E0B16;"><img id="Img3" src="hackathonGame/picture/Hadamard1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+					<td style="background-color: #0E0B16;"><img id="Img1" src="picture/control.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+					<td style="background-color: #0E0B16;"><img id="Img2" src="picture/Hadamard0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+					<td style="background-color: #0E0B16;"><img id="Img3" src="picture/Hadamard1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
 				</tr>
 				
 				<tr>
-					<td style="background-color: #0E0B16;"><img id="Img4" src="hackathonGame/picture/PauliX0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
-					<td style="background-color: #0E0B16;"><img id="Img5" src="hackathonGame/picture/PauliX1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
-					<td style="background-color: #0E0B16;"><img id="Img6" src="hackathonGame/picture/PauliZ0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+					<td style="background-color: #0E0B16;"><img id="Img4" src="picture/PauliX0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+					<td style="background-color: #0E0B16;"><img id="Img5" src="picture/PauliX1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+					<td style="background-color: #0E0B16;"><img id="Img6" src="picture/PauliZ0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
 				</tr>
 
 				<tr>
-					<td style="background-color: #0E0B16;"><img id="Img7" src="hackathonGame/picture/PauliZ1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
-					<td style="background-color: #0E0B16;"><img id="Img8" src="hackathonGame/picture/Identity0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
-					<td style="background-color: #0E0B16;"><img id="Img9" src="hackathonGame/picture/Identity1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+					<td style="background-color: #0E0B16;"><img id="Img7" src="picture/PauliZ1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+					<td style="background-color: #0E0B16;"><img id="Img8" src="picture/Identity0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
+					<td style="background-color: #0E0B16;"><img id="Img9" src="picture/Identity1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></td>
 				</tr>
 			</table>
 
 			<div>
 				<span><button id="btn"  class="primary large" style="margin: 15px;">Measure</button></span>
 				<span><input type="reset" value="Clear" class="large" style="margin-left: 5px;"/></span>
+				<button onclick="ran()">aaa</button>
 	
 			</div>
 																
 			
 
 		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-		<script src="hackathonGame/tuoyi.js"></script>
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+		<script src="./main.js"></script>		
 
 
 	</body>
