@@ -26,7 +26,7 @@ next.addEventListener("click", function(){
         button.disabled="disabled"
         button.style.color="#0E0B16"
         button.style.backgroundColor="#0E0B16"
-        alert("HAVE FUN ~");
+        alert("You have already compelete all questions.\n \n😆😆HAVE FUN ~");
     } 
     else if(num <= 3) {
         this.value="next >";
