@@ -30,177 +30,192 @@
 
 					</nav>
 			</div>
-
-		<div id="anniu" style="height: 80px; width: 1050px; position: relative;">
-			<img src="../blog/picture/fang.png" width="10px" style="float: left; position: absolute;top: 20px; left: 10px;"/>
-			<h1 style="position: absolute;left: 30px; top: 5px; color: #0E0B16;">Quantum Gate Game</h1>
-		</div>
-
-		<div class="all">
-			<!-- 棋盤+輸出 -->
-			<div class="leftall">
-				<!-- 4x4棋盤 -->
-					<div class="container44" style="float: left;">
-					<div id="Box1" ondrop="Drop1(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box2" ondrop="Drop2(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box3" ondrop="Drop3(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box4" ondrop="Drop4(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box5" ondrop="Drop5(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box6" ondrop="Drop6(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box7" ondrop="Drop7(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box8" ondrop="Drop8(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box9" ondrop="Drop9(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box10" ondrop="Drop10(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box11" ondrop="Drop11(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box12" ondrop="Drop12(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box13" ondrop="Drop13(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box14" ondrop="Drop14(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box15" ondrop="Drop15(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box16" ondrop="Drop16(event)" ondragover="AllowDrop(event)"></div>
-					
-					<div style="clear:both;"></div>
-				</div>
-
-				<!-- 坐標系統 -->
-				<div class="zuobiao">
-					<!-- 1~4 橫軸 -->
-					<div>
-						<div style="position: absolute; left: 10px; top:75px">1</div>
-						<div style="position: absolute; left: 10px; top:208px">2</div>
-						<div style="position: absolute; left: 10px; top:335px">3</div>
-						<div style="position: absolute; left: 10px; top:468px">4</div>
-					</div>
-					<div>
-						<div style="position: absolute; left: 100px; top:-10px">A</div>
-						<div style="position: absolute; left: 233px; top:-10px">B</div>
-						<div style="position: absolute; left: 355px; top:-10px">C</div>
-						<div style="position: absolute; left: 493px; top:-10px">D</div>
-					</div>
-				</div>
-
-				<!-- 分數格 -->
-				<div>
-					<!-- 圓形 -->
-					<div>
-						<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 140px; left: 140px;">
-						<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 140px; left: 400px;">
-						<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 400px; left: 140px;">
-						<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 400px; left: 400px;">
-					</div>
-					<!-- 方形底下&側邊 -->
-					<div>
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 75px;">
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 208px;">
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 335px;">
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 468px;">
-					</div>
-					<div>
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 75px; right: 0px;">
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 208px; right: 0px;">
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 335px; right: 0px;">
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 468px; right: 0px;">
-					</div>
-				</div>
+		<div class="game">
+			<div id="anniu" style="height: 80px; width: 1050px; position: relative;">
+				<img src="../blog/picture/fang.png" width="10px" style="float: left; position: absolute;top: 20px; left: 10px;"/>
+				<h1 style="position: absolute;left: 30px; top: 5px; color: #0E0B16;">Quantum Gate Game</h1>
 			</div>
 
-			<div class="rightall">
-			<!-- <div style="width: 80px; height: 25px; background-color: #4717F6; position: absolute; top: 64.5px; left: 920px; border-top: #ccc solid 2px; border-right: #ccc solid 2px;"></div> -->
-				<div class="container33" >
+			<div class="all">
+				<!-- 棋盤+輸出 -->
+				<div class="leftall">
+					<!-- 4x4棋盤 -->
+						<div class="container44" style="float: left;">
+						<div id="Box1" ondrop="Drop1(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box2" ondrop="Drop2(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box3" ondrop="Drop3(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box4" ondrop="Drop4(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box5" ondrop="Drop5(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box6" ondrop="Drop6(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box7" ondrop="Drop7(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box8" ondrop="Drop8(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box9" ondrop="Drop9(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box10" ondrop="Drop10(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box11" ondrop="Drop11(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box12" ondrop="Drop12(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box13" ondrop="Drop13(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box14" ondrop="Drop14(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box15" ondrop="Drop15(event)" ondragover="AllowDrop(event)"></div>
+						<div id="Box16" ondrop="Drop16(event)" ondragover="AllowDrop(event)"></div>
+					
+						<div style="clear:both;"></div>
+					</div>
 
-					<div id="Box18" ondrop="Drop(event)" ondragover="AllowDrop(event)">
-						<img id="control" src="picture/control.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
-					<div id="Box19" ondrop="Drop(event)" ondragover="AllowDrop(event)">
-						<img id="Hadamard0" src="picture/Hadamard0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
-					<div id="Box20" ondrop="Drop(event)" ondragover="AllowDrop(event)">
-						<img id="Hadamard1" src="picture/Hadamard1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
-					<div id="Box21" ondrop="Drop(event)" ondragover="AllowDrop(event)">
-						<img id="PauliX0" src="picture/PauliX0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
-					<div id="Box22" ondrop="Drop(event)" ondragover="AllowDrop(event)">
-						<img id="PauliX1" src="picture/PauliX1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
-					<div id="Box23" ondrop="Drop(event)" ondragover="AllowDrop(event)">
-						<img id="PauliZ0" src="picture/PauliZ0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
-					<div id="Box24" ondrop="Drop(event)" ondragover="AllowDrop(event)">
-						<img id="PauliZ1" src="picture/PauliZ1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
-					<div id="Box25" ondrop="Drop(event)" ondragover="AllowDrop(event)">
-						<img id="Identity0" src="picture/Identity0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
-					<div id="Box26" ondrop="Drop(event)" ondragover="AllowDrop(event)">
-						<img id="Identity1" src="picture/Identity1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
+					<!-- 坐標系統 -->
+					<div class="zuobiao">
+						<!-- 1~4 橫軸 -->
+						<div>
+							<div style="position: absolute; left: 10px; top:75px">1</div>
+							<div style="position: absolute; left: 10px; top:208px">2</div>
+							<div style="position: absolute; left: 10px; top:335px">3</div>
+							<div style="position: absolute; left: 10px; top:468px">4</div>
+						</div>
+						<div>
+							<div style="position: absolute; left: 100px; top:-10px">A</div>
+							<div style="position: absolute; left: 233px; top:-10px">B</div>
+							<div style="position: absolute; left: 355px; top:-10px">C</div>
+							<div style="position: absolute; left: 493px; top:-10px">D</div>
+						</div>
+					</div>
 
+					<!-- 分數格 -->
+					<div>
+					<!-- 圓形 -->
+						<div>
+							<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 140px; left: 140px;">
+							<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 140px; left: 400px;">
+							<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 400px; left: 140px;">
+							<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 400px; left: 400px;">
+						</div>
+					<!-- 方形底下&側邊 -->
+						<div>
+							<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 75px;">
+							<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 208px;">
+							<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 335px;">
+							<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 468px;">
+						</div>
+						<div>
+							<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 75px; right: 0px;">
+							<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 208px; right: 0px;">
+							<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 335px; right: 0px;">
+							<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 468px; right: 0px;">
+						</div>
+					</div>
 				</div>
 
-				<div class="fangge"><h3>Available Gates</h3></div>
+				<div class="rightall">
+				<!-- <div style="width: 80px; height: 25px; background-color: #4717F6; position: absolute; top: 64.5px; left: 920px; border-top: #ccc solid 2px; border-right: #ccc solid 2px;"></div> -->
+					<div class="container33" >
 
-				<div>
-					<span><button id="button"  class="primary large" style="margin: 0px; position: absolute; bottom: 0px; left: 0px;" disabled="disabled">Measure</button></span>
-					<span><input id="next" type="reset" value="next >" class="large" style="margin: 0px; position: absolute; bottom: 0px; right: 0px; max-width: 400px; word-break:break-all"/></span>
+						<div id="Box18" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+							<img id="control" src="picture/control.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
+						<div id="Box19" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+							<img id="Hadamard0" src="picture/Hadamard0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
+						<div id="Box20" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+							<img id="Hadamard1" src="picture/Hadamard1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
+						<div id="Box21" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+							<img id="PauliX0" src="picture/PauliX0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
+						<div id="Box22" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+							<img id="PauliX1" src="picture/PauliX1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
+						<div id="Box23" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+							<img id="PauliZ0" src="picture/PauliZ0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
+						<div id="Box24" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+							<img id="PauliZ1" src="picture/PauliZ1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
+						<div id="Box25" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+							<img id="Identity0" src="picture/Identity0.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
+						<div id="Box26" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+							<img id="Identity1" src="picture/Identity1.jpg" draggable="true" ondragstart="Drag(event)" style="width: 100px; height: 100px;"></div>
+
+					</div>
+
+					<div class="fangge"><h3>Available Gates</h3></div>
+
+					<div>
+						<span><button id="button"  class="primary large" style="margin: 0px; position: absolute; bottom: 0px; left: 0px;" disabled="disabled">Measure</button></span>
+						<span><input id="next" type="reset" value="next >" class="large" style="margin: 0px; position: absolute; bottom: 0px; right: 0px; max-width: 400px; word-break:break-all"/></span>
 				
 				<!-- <button onclick="ran()">aaa</button> -->
-				</div>
-				<div style="position: absolute; bottom: 150px; font-size: 1.0rem;">Which gate you want to connect with control gate?<br/>(Fill in the format: 1-A, 3-D,...All three values are required)</div>
-				<div class="controlconnect">
-					<select name="row" style="position: absolute; bottom: 45px; left: 0px; border: #ccc solid 1px;">
-						<option value="row" selected disabled>Row ↑↓</option>
-						<option value="1-A">1-A</option>
-						<option value="1-B">1-B</option>
-						<option value="1-C">1-C</option>
-						<option value="1-D">1-D</option>
-						<option value="2-A">2-A</option>
-						<option value="2-B">2-B</option>
-						<option value="2-C">2-C</option>
-						<option value="2-D">2-D</option>
-						<option value="3-A">3-A</option>
-						<option value="3-B">3-B</option>
-						<option value="3-C">3-C</option>
-						<option value="3-D">3-D</option>
-						<option value="4-A">4-A</option>
-						<option value="4-B">4-B</option>
-						<option value="4-C">4-C</option>
-						<option value="4-D">4-D</option>
+					</div>
+					<div style="position: absolute; bottom: 150px; font-size: 1.0rem;">Which gate you want to connect with control gate?<br/>(Fill in the format: 1-A, 3-D,...All three values are required)</div>
+					<div class="controlconnect">
+						<select name="row" style="position: absolute; bottom: 45px; left: 0px; border: #ccc solid 1px;">
+							<option value="row" selected disabled>Row ↑↓</option>
+							<option value="1-A">1-A</option>
+							<option value="1-B">1-B</option>
+							<option value="1-C">1-C</option>
+							<option value="1-D">1-D</option>
+							<option value="2-A">2-A</option>
+							<option value="2-B">2-B</option>
+							<option value="2-C">2-C</option>
+							<option value="2-D">2-D</option>
+							<option value="3-A">3-A</option>
+							<option value="3-B">3-B</option>
+							<option value="3-C">3-C</option>
+							<option value="3-D">3-D</option>
+							<option value="4-A">4-A</option>
+							<option value="4-B">4-B</option>
+							<option value="4-C">4-C</option>
+							<option value="4-D">4-D</option>
+						</select>
 
-					</select>
-					<select name="column" style="position: absolute; bottom: 45px; left: 135px; border: #ccc solid 1px;">
-						<option value="column" selected disabled>Column←→</option>
-						<option value="1-A">1-A</option>
-						<option value="1-B">1-B</option>
-						<option value="1-C">1-C</option>
-						<option value="1-D">1-D</option>
-						<option value="2-A">2-A</option>
-						<option value="2-B">2-B</option>
-						<option value="2-C">2-C</option>
-						<option value="2-D">2-D</option>
-						<option value="3-A">3-A</option>
-						<option value="3-B">3-B</option>
-						<option value="3-C">3-C</option>
-						<option value="3-D">3-D</option>
-						<option value="4-A">4-A</option>
-						<option value="4-B">4-B</option>
-						<option value="4-C">4-C</option>
-						<option value="4-D">4-D</option>
-					</select>
-					<select name="square" style="position: absolute; bottom: 45px; left: 270px; border: #ccc solid 1px;">
-						<option value="square" selected disabled>Square □</option>
-						<option value="1-A">1-A</option>
-						<option value="1-B">1-B</option>
-						<option value="1-C">1-C</option>
-						<option value="1-D">1-D</option>
-						<option value="2-A">2-A</option>
-						<option value="2-B">2-B</option>
-						<option value="2-C">2-C</option>
-						<option value="2-D">2-D</option>
-						<option value="3-A">3-A</option>
-						<option value="3-B">3-B</option>
-						<option value="3-C">3-C</option>
-						<option value="3-D">3-D</option>
-						<option value="4-A">4-A</option>
-						<option value="4-B">4-B</option>
-						<option value="4-C">4-C</option>
-						<option value="4-D">4-D</option>
-					</select>
-				</div>
-			</div>													
+						<select name="column" style="position: absolute; bottom: 45px; left: 135px; border: #ccc solid 1px;">
+							<option value="column" selected disabled>Column←→</option>
+							<option value="1-A">1-A</option>
+							<option value="1-B">1-B</option>
+							<option value="1-C">1-C</option>
+							<option value="1-D">1-D</option>
+							<option value="2-A">2-A</option>
+							<option value="2-B">2-B</option>
+							<option value="2-C">2-C</option>
+							<option value="2-D">2-D</option>
+							<option value="3-A">3-A</option>
+							<option value="3-B">3-B</option>
+							<option value="3-C">3-C</option>
+							<option value="3-D">3-D</option>
+							<option value="4-A">4-A</option>
+							<option value="4-B">4-B</option>
+							<option value="4-C">4-C</option>
+							<option value="4-D">4-D</option>
+						</select>
+						<select name="square" style="position: absolute; bottom: 45px; left: 270px; border: #ccc solid 1px;">
+							<option value="square" selected disabled>Square □</option>
+							<option value="1-A">1-A</option>
+							<option value="1-B">1-B</option>
+							<option value="1-C">1-C</option>
+							<option value="1-D">1-D</option>
+							<option value="2-A">2-A</option>
+							<option value="2-B">2-B</option>
+							<option value="2-C">2-C</option>
+							<option value="2-D">2-D</option>
+							<option value="3-A">3-A</option>
+							<option value="3-B">3-B</option>
+							<option value="3-C">3-C</option>
+							<option value="3-D">3-D</option>
+							<option value="4-A">4-A</option>
+							<option value="4-B">4-B</option>
+							<option value="4-C">4-C</option>
+							<option value="4-D">4-D</option>
+						</select>
+					</div>
+				</div>													
+			</div>
 		</div>
-		<div>
-			<h2 style="color: #0E0B16;">Description</h2>
+		<!-- content -->
+		<div class="content">
+			<img src="../blog/picture/fang_grey.png" width="10px" style="float: left; position: absolute;top: 10px; left: 10px;"/>
+			<h2 style="position: absolute;left: 30px; top: 5px; color: #0E0B16;">Description</h2>
+		</div>
+		<br/>
+		<br/>
+		<div class="content">
+			<img src="../blog/picture/fang_grey.png" width="10px" style="float: left; position: absolute;top: 10px; left: 10px;"/>
+			<h2 style="position: absolute;left: 30px; top: 5px; color: #0E0B16;">Quantum Gate</h2>
+		</div>
+		<br/>
+		<br/>
+		<div class="content">
+			<img src="../blog/picture/fang_grey.png" width="10px" style="float: left; position: absolute;top: 10px; left: 10px;"/>
+			<h2 style="position: absolute;left: 30px; top: 5px; color: #0E0B16;">Description</h2>
 		</div>
 		
 

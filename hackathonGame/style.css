@@ -67,7 +67,7 @@
     /* border:5px #ccc solid; */
     position: relative;
     position: absolute; top: 50%;; left: 50%;
-    margin-top: -180px;
+    margin-top: -170px;
     margin-left: -550px;
 
 }
@@ -85,3 +85,10 @@
     position: absolute; left: 0px;
 }
 
+.game{
+    height: 800px;
+}
+
+.content{
+    position: relative;
+}
