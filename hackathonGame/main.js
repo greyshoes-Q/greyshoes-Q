@@ -13,17 +13,24 @@ function Drop(event){
 
 var next = document.getElementById("next")
 var num = 0
+var button = document.getElementById("button")
+var anniu = document.getElementById("anniu")
 
 next.addEventListener("click", function(){
     
     num = num+1
-    alert(num);
 
-    if (num == 3) {
-        this.value="you have complete all questions";
+    if (num >= 4) {
+        this.value="you have complete ✔";
+        this.style.width="400px"
+        button.disabled="disabled"
+        button.style.color="#0E0B16"
+        button.style.backgroundColor="#0E0B16"
+        alert("HAVE FUN ~");
     } 
-    else if(num !==3) {
+    else if(num <= 3) {
         this.value="next >";
+        alert("Question"+num);
     }
 })
 

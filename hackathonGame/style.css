@@ -1,17 +1,14 @@
 .container44 {
     width: 33em;
-    margin-left: 30px;
-    margin-bottom: 100px;
-    margin-right: 150px;
+    margin: 0px;
+
 }
 
 .container33 {
     width: 24.8em;
-    margin-left: 10px;
-    margin-bottom: 100px;
-    margin-right: 100px;
-    margin-top: -15.5px;
+    margin: 0px;
     border: 2px solid #ccc;
+    position: absolute; top: 34px;
     
 }
 
@@ -37,15 +34,45 @@
     border-top: 2px solid #ccc;
     border-right: 2px solid #ccc;
     border-left: 2px solid #ccc;
-    margin-top: 5px;
+    border-bottom: 2px solid #0E0B16;
+    margin: 0px;
     width: 250px;
     height: 36px;
     background-color: #0E0B16;
-    position: absolute; top: 50px; left: 44.88em;
+    position: absolute; top: 0px;
     text-align:center;
-    line-height: 12;
+    line-height: 12px;
 }
 
+.leftall{
+    width: 600px;
+    height: 600px;
+    margin: 10px;
+    position: relative;
+
+}
+.rightall{
+    width: 400px;
+    height: 550px;
+    margin-top: 15px;
+    margin-right: 10px;
+    position: relative;
+    position: absolute;right: 0px; top: 0px;
+    float: right"
+
+}
+
+.all{
+    background-color: #0E0B16;
+    width: 1050px;
+    height: 650px;
+    border:5px #ccc solid;
+    position: relative;
+    position: absolute; top: 50%;; left: 50%;
+    margin-top: -150px;
+    margin-left: -525px;
+
+}
 
 
 
