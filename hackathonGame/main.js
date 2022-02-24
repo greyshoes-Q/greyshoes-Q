@@ -11,6 +11,22 @@ function Drop(event){
     // alert(data)
 }
 
+var next = document.getElementById("next")
+var num = 0
+
+next.addEventListener("click", function(){
+    
+    num = num+1
+    alert(num);
+
+    if (num == 3) {
+        this.value="you have complete all questions";
+    } 
+    else if(num !==3) {
+        this.value="next >";
+    }
+})
+
 // clear.addEventListener("click", function(){
 //     this.src ="#";
 // })
