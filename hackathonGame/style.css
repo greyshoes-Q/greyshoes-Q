@@ -1,7 +1,6 @@
 .container44 {
     width: 33em;
-    margin: 0px;
-
+    margin: 50px 0px 0px 50px;
 }
 
 .container33 {
@@ -13,7 +12,7 @@
 }
 
 
-#Box2,#Box3,#Box4,#Box5,#Box6,#Box7,#Box8,#Box9,#Box0,#Box11,#Box12,#Box13,#Box14,#Box15,#Box16,#Box17,#Box18,#Box19,#Box20,#Box21,#Box22,#Box23,#Box24,#Box25,#Box26{
+#Box2,#Box3,#Box4,#Box5,#Box6,#Box7,#Box8,#Box9,#Box10,#Box11,#Box12,#Box13,#Box14,#Box15,#Box16,#Box1,#Box18,#Box19,#Box20,#Box21,#Box22,#Box23,#Box24,#Box25,#Box26{
     width:120px;
     height:120px;
     padding:10px;
@@ -45,34 +44,44 @@
 }
 
 .leftall{
-    width: 600px;
-    height: 600px;
+    width: 650px;
+    height: 650px;
     margin: 10px;
     position: relative;
 
 }
 .rightall{
     width: 400px;
-    height: 550px;
+    height: 650px;
     margin-top: 15px;
     margin-right: 10px;
     position: relative;
     position: absolute;right: 0px; top: 0px;
-    float: right"
-
+    float: right;
 }
 
 .all{
     background-color: #0E0B16;
-    width: 1050px;
-    height: 650px;
-    border:5px #ccc solid;
+    width: 1100px;
+    height: 700px;
+    /* border:5px #ccc solid; */
     position: relative;
     position: absolute; top: 50%;; left: 50%;
-    margin-top: -150px;
-    margin-left: -525px;
+    margin-top: -180px;
+    margin-left: -550px;
 
 }
 
+.controlconnect{
+    background-color: darkgray; 
+    color: #ccc; 
+    width: 125px;
+    position: relative;
+    position: absolute; bottom: 50px;
+}
 
+.zuobiao{
+    font-size: 2.5rem;
+    position: absolute; left: 0px;
+}
 

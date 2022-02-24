@@ -41,6 +41,7 @@
 			<div class="leftall">
 				<!-- 4x4棋盤 -->
 					<div class="container44" style="float: left;">
+					<div id="Box1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
 					<div id="Box2" ondrop="Drop(event)" ondragover="AllowDrop(event)" on></div>
 					<div id="Box3" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
 					<div id="Box4" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
@@ -49,38 +50,55 @@
 					<div id="Box7" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
 					<div id="Box8" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
 					<div id="Box9" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box0" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					<div id="Box10" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
 					<div id="Box11" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
 					<div id="Box12" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
 					<div id="Box13" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
 					<div id="Box14" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
 					<div id="Box15" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
 					<div id="Box16" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
-					<div id="Box17" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+					
 					<div style="clear:both;"></div>
+				</div>
+
+				<!-- 坐標系統 -->
+				<div class="zuobiao">
+					<!-- 1~4 橫軸 -->
+					<div>
+						<div style="position: absolute; left: 10px; top:75px">1</div>
+						<div style="position: absolute; left: 10px; top:208px">2</div>
+						<div style="position: absolute; left: 10px; top:335px">3</div>
+						<div style="position: absolute; left: 10px; top:468px">4</div>
+					</div>
+					<div>
+						<div style="position: absolute; left: 75px; top:-5px">A</div>
+						<div style="position: absolute; left: 208px; top:-5px">B</div>
+						<div style="position: absolute; left: 335px; top:-5px">C</div>
+						<div style="position: absolute; left: 468px; top:-5px">D</div>
+					</div>
 				</div>
 
 				<!-- 分數格 -->
 				<div>
 					<!-- 圓形 -->
 					<div>
-						<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 90px; left: 90px;">
-						<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 90px; left: 350px;">
-						<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 350px; left: 90px;">
-						<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 350px; left: 350px;">
+						<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 140px; left: 140px;">
+						<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 140px; left: 400px;">
+						<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 400px; left: 140px;">
+						<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 400px; left: 400px;">
 					</div>
 					<!-- 方形底下&側邊 -->
 					<div>
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 25px;">
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 158px;">
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 285px;">
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 418px;">
+						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 75px;">
+						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 208px;">
+						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 335px;">
+						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; bottom: 0px; left: 468px;">
 					</div>
 					<div>
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 25px; right: 0px;">
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 158px; right: 0px;">
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 285px; right: 0px;">
-						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 418px; right: 0px;">
+						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 75px; right: 0px;">
+						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 208px; right: 0px;">
+						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 335px; right: 0px;">
+						<img src="picture/measureZ.png" style="width: 80px; height: 80px; position: absolute; top: 468px; right: 0px;">
 					</div>
 				</div>
 			</div>
@@ -118,8 +136,70 @@
 				
 				<!-- <button onclick="ran()">aaa</button> -->
 				</div>
+				<div style="position: absolute; bottom: 150px; font-size: 1.0rem;">Which gate you want to connect with control gate?<br/>(Fill in the format: 1-A, 3-D,...All three values are required)</div>
+				<div class="controlconnect">
+					<select name="row" style="position: absolute; bottom: 45px; left: 0px; border: #ccc solid 1px;">
+						<option value="row" selected disabled>Row ↑↓</option>
+						<option value="1-A">1-A</option>
+						<option value="1-B">1-B</option>
+						<option value="1-C">1-C</option>
+						<option value="1-D">1-D</option>
+						<option value="2-A">2-A</option>
+						<option value="2-B">2-B</option>
+						<option value="2-C">2-C</option>
+						<option value="2-D">2-D</option>
+						<option value="3-A">3-A</option>
+						<option value="3-B">3-B</option>
+						<option value="3-C">3-C</option>
+						<option value="3-D">3-D</option>
+						<option value="4-A">4-A</option>
+						<option value="4-B">4-B</option>
+						<option value="4-C">4-C</option>
+						<option value="4-D">4-D</option>
+
+					</select>
+					<select name="column" style="position: absolute; bottom: 45px; left: 135px; border: #ccc solid 1px;">
+						<option value="column" selected disabled>Column←→</option>
+						<option value="1-A">1-A</option>
+						<option value="1-B">1-B</option>
+						<option value="1-C">1-C</option>
+						<option value="1-D">1-D</option>
+						<option value="2-A">2-A</option>
+						<option value="2-B">2-B</option>
+						<option value="2-C">2-C</option>
+						<option value="2-D">2-D</option>
+						<option value="3-A">3-A</option>
+						<option value="3-B">3-B</option>
+						<option value="3-C">3-C</option>
+						<option value="3-D">3-D</option>
+						<option value="4-A">4-A</option>
+						<option value="4-B">4-B</option>
+						<option value="4-C">4-C</option>
+						<option value="4-D">4-D</option>
+					</select>
+					<select name="square" style="position: absolute; bottom: 45px; left: 270px; border: #ccc solid 1px;">
+						<option value="square" selected disabled>Square □</option>
+						<option value="1-A">1-A</option>
+						<option value="1-B">1-B</option>
+						<option value="1-C">1-C</option>
+						<option value="1-D">1-D</option>
+						<option value="2-A">2-A</option>
+						<option value="2-B">2-B</option>
+						<option value="2-C">2-C</option>
+						<option value="2-D">2-D</option>
+						<option value="3-A">3-A</option>
+						<option value="3-B">3-B</option>
+						<option value="3-C">3-C</option>
+						<option value="3-D">3-D</option>
+						<option value="4-A">4-A</option>
+						<option value="4-B">4-B</option>
+						<option value="4-C">4-C</option>
+						<option value="4-D">4-D</option>
+					</select>
+				</div>
 			</div>													
 		</div>
+		<!-- <h2>Description</h2> -->
 
 		<!-- Scripts -->
 		<script src="../assets/js/jquery.min.js"></script>
