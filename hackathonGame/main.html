@@ -40,7 +40,7 @@
 				<!-- 棋盤+輸出 -->
 				<div class="leftall">
 					<!-- 4x4棋盤 -->
-						<div class="container44" style="float: left;">
+					<div class="container44" id="fourfour" style="float: left;">
 						<div id="Box1" ondrop="Drop1(event)" ondragover="AllowDrop(event)"></div>
 						<div id="Box2" ondrop="Drop2(event)" ondragover="AllowDrop(event)"></div>
 						<div id="Box3" ondrop="Drop3(event)" ondragover="AllowDrop(event)"></div>
@@ -82,10 +82,10 @@
 					<div>
 					<!-- 圓形 -->
 						<div>
-							<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 140px; left: 140px;">
-							<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 140px; left: 400px;">
-							<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 400px; left: 140px;">
-							<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border: 1px #ccc dashed; border-radius: 40px; position: absolute; top: 400px; left: 400px;">
+							<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border-radius: 40px; position: absolute; top: 140px; left: 140px;">
+							<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border-radius: 40px; position: absolute; top: 140px; left: 400px;">
+							<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border-radius: 40px; position: absolute; top: 400px; left: 140px;">
+							<img src="picture/measureZ.png" style="background-color: #0E0B16; width: 80px; height: 80px; border-radius: 40px; position: absolute; top: 400px; left: 400px;">
 						</div>
 					<!-- 方形底下&側邊 -->
 						<div>
@@ -138,7 +138,7 @@
 					</div>
 					<div style="position: absolute; bottom: 150px; font-size: 1.0rem;">Which gate you want to connect with control gate?<br/>(Fill in the format: 1-A, 3-D,...All three values are required)</div>
 					<div class="controlconnect">
-						<select name="row" style="position: absolute; bottom: 45px; left: 0px; border: #ccc solid 1px;">
+						<select id="row" style="position: absolute; bottom: 45px; left: 0px; border: #ccc solid 1px;">
 							<option value="row" selected disabled>Row ↑↓</option>
 							<option value="1-A">1-A</option>
 							<option value="1-B">1-B</option>
@@ -158,7 +158,7 @@
 							<option value="4-D">4-D</option>
 						</select>
 
-						<select name="column" style="position: absolute; bottom: 45px; left: 135px; border: #ccc solid 1px;">
+						<select id="column" style="position: absolute; bottom: 45px; left: 135px; border: #ccc solid 1px;">
 							<option value="column" selected disabled>Column←→</option>
 							<option value="1-A">1-A</option>
 							<option value="1-B">1-B</option>
@@ -177,7 +177,7 @@
 							<option value="4-C">4-C</option>
 							<option value="4-D">4-D</option>
 						</select>
-						<select name="square" style="position: absolute; bottom: 45px; left: 270px; border: #ccc solid 1px;">
+						<select id="square" style="position: absolute; bottom: 45px; left: 270px; border: #ccc solid 1px;">
 							<option value="square" selected disabled>Square □</option>
 							<option value="1-A">1-A</option>
 							<option value="1-B">1-B</option>
@@ -207,15 +207,31 @@
 		</div>
 		<br/>
 		<br/>
+		<br/>
+		<div class="p">
+			<p style="color: #0E0B16;">TO DO</p>
+		</div>
+
 		<div class="content">
 			<img src="../blog/picture/fang_grey.png" width="10px" style="float: left; position: absolute;top: 10px; left: 10px;"/>
 			<h2 style="position: absolute;left: 30px; top: 5px; color: #0E0B16;">Quantum Gate</h2>
 		</div>
 		<br/>
 		<br/>
+		<br/>
+		<div class="p">
+			<p style="color: #0E0B16;">TO DO</p>
+		</div>
+
 		<div class="content">
 			<img src="../blog/picture/fang_grey.png" width="10px" style="float: left; position: absolute;top: 10px; left: 10px;"/>
 			<h2 style="position: absolute;left: 30px; top: 5px; color: #0E0B16;">Description</h2>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<div class="p">
+			<p style="color: #0E0B16;">TO DO</p>
 		</div>
 		
 
