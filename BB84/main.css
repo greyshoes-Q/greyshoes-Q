@@ -1,3 +1,8 @@
+@keyframes change-opacity{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
 body{
     margin: 0;
 }
@@ -14,6 +19,11 @@ h1{
     top: 45%;
     left: 16%;
     transform: translate(-50%, -50%);
+
+    animation-name: change-opacity;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #videoback{
@@ -24,7 +34,27 @@ h1{
     min-height: 100%;
 }
 
-@keyframes change-opacity{
-    from {opacity: 1;}
-    to {opacity: 0;}
+#playerAlice{
+    height: 120px;
+    position: absolute;
+    top: 56%;
+    left: 15%;
+    transform: translate(-50%, -50%);    
+    /* z-index: 1; */
+}
+
+#playerBob{
+    height: 120px;
+    position: absolute;
+    top: 71%;
+    left: 15%;
+    transform: translate(-50%, -50%);    
+}
+
+#playerHack{
+    height: 120px;
+    position: absolute;
+    top: 86%;
+    left: 15%;
+    transform: translate(-50%, -50%);    
 }
