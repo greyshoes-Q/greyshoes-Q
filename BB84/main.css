@@ -37,8 +37,8 @@ h1{
 #playerAlice{
     height: 120px;
     position: absolute;
-    top: 56%;
-    left: 15%;
+    top: 58%;
+    left: 17%;
     transform: translate(-50%, -50%);    
     /* z-index: 1; */
 }
@@ -46,15 +46,15 @@ h1{
 #playerBob{
     height: 120px;
     position: absolute;
-    top: 71%;
-    left: 15%;
+    top: 73%;
+    left: 17%;
     transform: translate(-50%, -50%);    
 }
 
 #playerHack{
     height: 120px;
     position: absolute;
-    top: 86%;
-    left: 15%;
+    top: 88%;
+    left: 17%;
     transform: translate(-50%, -50%);    
 }
