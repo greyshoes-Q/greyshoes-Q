@@ -154,7 +154,10 @@ crow.addEventListener("change", function(){
     crow_value = this.value;
     alert(crow_value)
     if(crow_value == "1-A"){
-        box1.style.border = "1.5px solid #CA8EFF"
+        box1.style.backgroundColor = "#CA8EFF"
+    }
+    else{
+        box1.style.backgroundColor = "red"
     }
 })
 
