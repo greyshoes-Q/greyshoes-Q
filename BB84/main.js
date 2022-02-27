@@ -1,3 +1,5 @@
+var content = document.getElementById("content")
+
 var playerAlice = document.getElementById("playerAlice");
 playerAlice.addEventListener("mouseout", function(){
     this.src ="picture/palyerA.png";
@@ -6,7 +8,11 @@ playerAlice.addEventListener("mouseover", function(){
     this.src = "picture/palyerA2.png";
 })
 playerAlice.addEventListener("click", function(){
-    alert("aa")
+    content.innerHTML=content.innerHTML+`
+    <video class="zhuanchang" autoplay>
+    <source src="./zhuanchang.mp4">
+    </video>
+    `
 })
 
 var playerBob = document.getElementById("playerBob");
@@ -17,7 +23,11 @@ playerBob.addEventListener("mouseover", function(){
     this.src = "picture/palyerB2.png";
 })
 playerBob.addEventListener("click", function(){
-    alert("aa")
+    content.innerHTML=content.innerHTML+`
+    <video class="zhuanchang" autoplay>
+    <source src="./zhuanchang.mp4">
+    </video>
+    `
 })
 
 var playerHack = document.getElementById("playerHack");
@@ -28,5 +38,10 @@ playerHack.addEventListener("mouseover", function(){
     this.src = "picture/palyerH2.png";
 })
 playerHack.addEventListener("click", function(){
-    alert("aa")
+    content.innerHTML=content.innerHTML+`
+    <video class="zhuanchang" autoplay>
+    <source src="./zhuanchang.mp4">
+    </video>
+    `
 })
+
