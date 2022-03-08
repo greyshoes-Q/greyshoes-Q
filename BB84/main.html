@@ -20,7 +20,7 @@
 					<header id="header">
 						<a href="../index.html" class="logo"><strong>Quantum</strong> <span>詼諧_GreyShoes Q</span></a>
 						<nav>
-							<a href="#menu">遊戲玩法❔</a>
+							<a href="#menu">遊戲玩法/介紹❔</a>
 						</nav>
 					</header>
 
@@ -44,16 +44,58 @@
 				<video id="videoback" autoplay loop muted>
 					<source src="./beginngbackground.mp4">
 				</video>
-				<h1>量子密碼學</br>BB84加密互動網站</h1>
+				<h1 id="h1h1">量子密碼學</br>BB84加密互動網站</h1>
 				<p id="begintext"><strong>< < 選擇角色以開始遊戲 > ></strong></p>
 				<img id="playerAlice" src="picture/palyerA.png"/>
 				<img id="playerBob" src="picture/palyerB.png"/>
 				<img id="playerHack" src="picture/palyerH.png"/>
+				<!-- <audio class="tishiyin" src="tishiyin.mp3" autoplay preload="auto"></audio> -->
 
-			</div>
-
-
+				<!-- <video class="zhuanchang" autoplay muted>
+					<source src="./zhuanchang.mp4">
+				</video>
+				<div class="player">
+					<img src="./picture/A.svg" style="float: left;"/>
+					<h1 id="Ah1">Alice的視角</h1>
+					<p>請輸入完整密碼的前2位數：</p>
+					<select id="first" onchange="mima1(this)">
+						<option value="xuanzemima" selected disabled><strong>選擇🗝</strong></option>
+						<option value="0">0</option>
+						<option value="1">1</option>
+					</select>
+					<select id="second" onchange="mima2(this)">
+						<option value="xuanzemima" selected disabled><strong>選擇🗝</strong></option>
+						<option value="0">0</option>
+						<option value="1">1</option>
+					</select>
+					<span><button class="primary small" id="queren" onclick="querenmima()">確認 > </button></span>
+					<p>目前有可能的完整密碼：</p>
+					<div style="font-size: 2rem;">
+						<span id="mima000">000</span><span id="mima001">001</span><span id="mima010">010</span><span id="mima100">100</span><br/>
+						<span id="mima011">011</span><span id="mima101">101</span><span id="mima110">110</span><span id="mima111">111</span>
+					</div>
+					<span><button id="answerbtn" class="primary large" style="margin-top: 3%;" onclick="answerbtn()">確認3位數完整密碼答案 > </button></span>
+					<div id="bg-xunxichuan">
+						<div><img id="alice" src="./picture/alice.png"/></div>
+						<div id="text-xunxi"><strong style="color: black; font-size: 2rem;"><u>訊息串</u></strong></div>
+						<img id="zhibiao" src="./picture/zhibiao.png"/> -->
+						<!-- <p id="A1"><公告> 請選擇密碼0或1</p>
+						<p id="A2"><公告> Alice已輸入密碼</p>
+						<p id="A3"><公告> Bob（電腦）已隨機產生密碼</p>
+						<p id="A4"><公告> Bob（電腦）對密碼電路進行測量</p>
+						<div id="inner-xunxichuan">
+							<p id="A5yes"><私訊> Bob輸入的密碼與你相同</p>
+							<p id="A5no"><Bob私訊你>他輸入的密碼與你不相同</p>
+							<p id="A4"><公告> Alice與Bob都已成功獲得密碼關鍵</p>
+						</div>
+						 -->
+					</div>
+				</div>
+			</div>	
+		</div>
 		<!-- Scripts -->
+
+			<script src="play.js"></script>
 			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/jquery.scrolly.min.js"></script>
 			<script src="../assets/js/jquery.scrollex.min.js"></script>
@@ -62,5 +104,7 @@
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
 			<script src="main.js"></script>
+			<script src="measure.js"></script>
+			
 	</body>
 </html>

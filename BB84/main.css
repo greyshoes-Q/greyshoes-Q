@@ -4,15 +4,20 @@
 }
 
 @keyframes change-opacity01{
-    from {opacity: 0.5;}
+    from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@keyframes xunxiA1{
+    from{top: 15%;left: 5%;}
+    to{top: 22%; left: 10%;}
 }
 
 body{
     margin: 0;
 }
 
-h1{
+#h1h1{
     position: absolute;
     top: 30%;
     left: 20%;
@@ -72,4 +77,301 @@ h1{
     animation-name: change-opacity01;
     animation-duration: 3s;
     animation-iteration-count: 1;
+}
+
+.player{
+    margin: 3%;
+    z-index: 1;
+    opacity: 0;
+    animation-name: change-opacity01;
+    animation-delay: 4s;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#bg-xunxichuan{
+    height: 85%;
+    width: 40%;
+    background-color:rgb(228, 228, 228);
+    position: absolute;
+    top: 52%;
+    left: 70%;
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+}
+
+#text-xunxi{
+
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    transform: translate(-50%, -50%); 
+}
+
+#alice{
+    width: 90%;
+    border-radius: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+#first{
+    width: 9%;
+    height: 8%;
+    position: absolute;
+    top: 35%;
+    left: 26%;
+    transform: translate(-50%, -50%); 
+    border: 2px solid #ccc;
+}
+
+#second{
+    width: 9%;
+    height: 8%;
+    position: absolute;
+    top: 35%;
+    left: 36%;
+    transform: translate(-50%, -50%); 
+    border: 2px solid #ccc;
+}
+
+#third{
+    width: 9%;
+    height: 8%;
+    position: absolute;
+    top: 35%;
+    left: 26%;
+    transform: translate(-50%, -50%); 
+    border: 2px solid #ccc;
+}
+
+#queren{
+    position: absolute;
+    height: 8%;
+    top: 31%;
+    left: 42%;    
+}
+
+#querenB{
+    position: absolute;
+    height: 8%;
+    top: 31%;
+    left: 33%;    
+}
+
+#mima000, #mima001, #mima010, #mima100, #mima011, #mima101, #mima110, #mima111{
+    margin-right: 2%;
+    color: #00CC99;
+    /* text-decoration: line-through; */
+}
+
+#zhibiao1{
+    height: 5%;
+    position: absolute;
+    top: 15.5%;
+    left: 45%;
+    animation-name: change-opacity;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#zhibiao2{
+    height: 5%;
+    position: absolute;
+    top: 43%;
+    left: 95%;
+    opacity: 0;
+    animation-name: change-opacity;
+    animation-delay: 4.5s;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#zhibiao2B{
+    height: 5%;
+    position: absolute;
+    top: 36%;
+    left: 90%;
+    opacity: 0;
+    animation-name: change-opacity;
+    animation-delay: 4.5s;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#A1,#B1{
+    color: #000;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-weight: bold;
+}
+#A2,#B2{
+    color: #000;
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    font-weight: bold;
+    opacity: 0;
+    animation-name: change-opacity01;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#A3,#B3{
+    color: #000;
+    position: absolute;
+    top: 29%;
+    left: 5%;
+    font-weight: bold;
+    opacity: 0;
+    animation-name: change-opacity01;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#A4,#B4{
+    color: #000;
+    position: absolute;
+    top: 36%;
+    left: 5%;
+    font-weight: bold;
+    opacity: 0;
+    animation-name: change-opacity01;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#A5{
+    color: #000;
+    position: absolute;
+    top: 43%;
+    left: 5%;
+    font-weight: bold;
+    opacity: 0;
+    animation-name: change-opacity01;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#B5{
+    color: #000;
+    position: absolute;
+    top: 43%;
+    left: 5%;
+    font-weight: bold;
+    opacity: 0;
+    animation-name: change-opacity01;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#A6yes{
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-weight: bold;
+    opacity: 0;
+    animation-name: change-opacity01;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#A6no{
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-weight: bold;
+    opacity: 0;
+    animation-name: change-opacity01;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#A7{
+    color: #000;
+    position: absolute;
+    top: 57%;
+    left: 5%;
+    font-weight: bold;
+    opacity: 0;
+    animation-name: change-opacity01;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#Ahr{
+    color: #000;
+    position: absolute;
+    top: 64%;
+    left: 5%;
+    font-weight: bold;
+    font-weight: bold;
+    opacity: 0;
+    animation-name: change-opacity01;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#A8{
+    color: #000;
+    position: absolute;
+    top: 71%;
+    left: 5%;
+    font-weight: bold;
+    opacity: 0;
+    animation-name: change-opacity01;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    animation-name: change-opacity;
+    animation-delay: 2s;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#checkv{
+    position: absolute;
+    top: 43%;
+    left: 69%;
+    opacity: 0;
+    animation-name: change-opacity01;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#measurev{
+    position: absolute;
+    top: 36%;
+    left: 60%;
+    opacity: 0;
+    animation-name: change-opacity01;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
