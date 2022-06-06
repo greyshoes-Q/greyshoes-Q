@@ -16,7 +16,6 @@ function measure(mima1,mima2,mima3){
         circuit[1]=d
     }
     alert(circuit+"密碼："+mima1+mima2+mima3)
-    jieguo()
     return circuit
 }
 

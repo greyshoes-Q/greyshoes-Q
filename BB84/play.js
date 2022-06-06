@@ -129,6 +129,8 @@ function querenmimaB(){
     <button id="measurev" class="primary small" onclick="measure(${first_value}, ${second_value}, ${third_value})">查看測量結果🔜</button>
     <img id="zhibiao2B" src="./picture/zhibiao.png"/>
     `
+    mima = first_value+""+second_value+""+third_value
+    return mima
 }
 
 function checkv(element){

@@ -70,7 +70,7 @@ playerBob.addEventListener("click", function(){
 	<div class="player">
 		<img src="./picture/A.svg" style="float: left;"/>
 		<h1 id="Ah1">Alice的視角</h1>
-		<p>請輸入完整密碼的前2位數：</p>
+		<p>請輸入完整密碼的第3位數：</p>
 		<select id="third" onchange="mima3(this)">
 			<option value="xuanzemima" selected disabled><strong>選擇🗝</strong></option>
 			<option value="0">0</option>
@@ -102,3 +102,17 @@ playerHack.addEventListener("click", function(){
     </video>
     `
 })
+
+function shuoye(){
+	var content = document.getElementById("content")
+	content.innerHTML=`
+	<audio class="bgm" src="./bgm_mogu.mp3" autoplay preload="auto"></audio>
+	<video id="videoback" autoplay loop muted>
+	<source src="./beginngbackground.mp4">
+	</video>
+	<h1 id="h1h1">量子密碼學</br>BB84加密互動網站</h1>
+	<p id="begintext"><strong>< < 選擇角色以開始遊戲 > ></strong></p>
+	<img id="playerAlice" src="picture/palyerA.png"/>
+	<img id="playerBob" src="picture/palyerB.png"/>
+	<img id="playerHack" src="picture/palyerH.png"/>`
+}
